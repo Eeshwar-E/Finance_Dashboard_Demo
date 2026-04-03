@@ -188,24 +188,9 @@ export function SpendingChart({ data, total }) {
               />
             </PieChart>
           </ResponsiveContainer>
-          <div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              textAlign: 'center',
-            }}
-          >
-            <div style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>Total</div>
-            <div
-              style={{
-                fontSize: '18px',
-                fontWeight: '700',
-                color: 'var(--color-text-primary)',
-                fontFamily: 'var(--font-mono)',
-              }}
-            >
+          <div className={styles.donutOverlay}>
+            <div className={styles.donutOverlayLabel}>Total</div>
+            <div className={styles.donutOverlayValue}>
               {formatCurrency(total)}
             </div>
           </div>
