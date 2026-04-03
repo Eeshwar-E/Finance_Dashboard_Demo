@@ -79,7 +79,7 @@ export function BalanceChart({ data }) {
                 axisLine={false}
                 tickLine={false}
                 tick={{ fill: 'var(--color-text-muted)', fontSize: 12 }}
-                tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                tickFormatter={(value) => `₹${(value / 1000).toFixed(0)}k`}
                 dx={-10}
               />
               <Tooltip content={<CustomTooltip />} />
@@ -117,7 +117,7 @@ export function BalanceChart({ data }) {
                 axisLine={false}
                 tickLine={false}
                 tick={{ fill: 'var(--color-text-muted)', fontSize: 12 }}
-                tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                tickFormatter={(value) => `₹${(value / 1000).toFixed(0)}k`}
                 dx={-10}
               />
               <Tooltip content={<CustomTooltip />} />

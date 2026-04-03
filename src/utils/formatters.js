@@ -1,7 +1,7 @@
 import { format, subDays, subMonths, startOfMonth, endOfMonth, isWithinInterval } from 'date-fns';
 
-export function formatCurrency(amount, currency = 'USD') {
-  return new Intl.NumberFormat('en-US', {
+export function formatCurrency(amount, currency = 'INR') {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency,
     minimumFractionDigits: 2,
