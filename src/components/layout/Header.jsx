@@ -56,8 +56,8 @@ export function Header() {
         </button>
 
         <div className={styles.userProfile}>
-          <div className={styles.avatar}>JD</div>
-          <span className={styles.userName}>John Doe</span>
+          <div className={styles.avatar}>EE</div>
+          <span className={styles.userName}>Eeshwar Elango</span>
           {state.role === 'admin' && <span className={styles.adminBadge}>Admin</span>}
         </div>
       </nav>
