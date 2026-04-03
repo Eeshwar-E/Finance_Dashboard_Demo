@@ -1,8 +1,9 @@
 .summaryGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   margin-bottom: 32px;
+  align-items: start;
 }
 
 .summaryCard {
@@ -13,6 +14,12 @@
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
+  min-height: 170px;
+  z-index: 1;
+}
+
+.summaryCard--income {
+  z-index: 2;
 }
 
 .summaryCard:hover {
